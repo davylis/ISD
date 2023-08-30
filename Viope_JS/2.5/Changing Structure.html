@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Changing Structure</title>
+
+</head>
+<body>
+  <h1>Changing Structure</h1>
+  <h2>Training my HTML skills</h2>
+
+    <p style="color:blue;">Get image by pressing the button:</p>
+
+    <button id="IMG" style="border-radius: 50%;">Add image</button> 
+    <div id="images"></div>
+
+    <p id = "add">
+
+	<script>
+        const element = document.getElementById("IMG");
+        element.addEventListener("click", addImg);
+
+        function addImg() {
+            var img = document.createElement("img");
+            img.src="https://www.haaga-helia.fi/themes/custom/hh/logo.png";
+            document.getElementById("images").appendChild(img);
+}
+    </script>
+</body>
+</html>
+
+
+
