@@ -6,7 +6,7 @@ function showEmail() {
 
     var surname = document.getElementById("txtSurname").value;
 
-    var email = "@myy.haaga-helia.fi";
+    var email = name + '.' + surname + "@myy.haaga-helia.fi";
 
-    document.getElementById("pOutput").innerHTML = name + '.' + surname + email;
+    document.getElementById("pOutput").innerHTML = email;
 }

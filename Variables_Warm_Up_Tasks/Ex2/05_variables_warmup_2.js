@@ -6,7 +6,8 @@ function add() {
     // create variable for the second number
     let txt2 = Number(document.getElementById("txtSecond").value);
     // create variable for the sum
-    let sum = txt1 + txt2
+    let sum = txt1 + txt2;
+    let result = txt1 + '+' + txt2 + '=' + sum;
     // show output on the HTML page
-    document.getElementById("pOutput").innerHTML = txt1 + '+' + txt2 + '=' + sum;
+    document.getElementById("pOutput").innerHTML = result;
 }

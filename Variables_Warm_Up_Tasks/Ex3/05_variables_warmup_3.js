@@ -8,5 +8,6 @@ function showMinutes() {
 // create variable for changing hours to minutes
     var htom = h * 60;
 // create variable for the result
-    document.getElementById("pOutput").innerHTML = htom + m + " " + "minutes";
+    var result = htom + m + " " + "minutes"
+    document.getElementById("pOutput").innerHTML = result;
 }
