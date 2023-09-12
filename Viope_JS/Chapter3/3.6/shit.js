@@ -7,6 +7,5 @@ let unitfine = 	(income-255)/60
 
     // Write the answer to the web page DOM, in the answer div, as the content
     
-console.log(unitfine);
 document.getElementById("answerDiv").innerHTML = "Unit fine is " + unitfine.toFixed(2);
 }
