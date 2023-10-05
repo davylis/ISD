@@ -4,7 +4,7 @@
 
 function randomizeCard() {
     var suitArray = ["c", "d", "h", "s"];
-    var suitNumber = Math.floor(Math.random() * 2);
+    var suitNumber = Math.floor(Math.random() * 4);
     var cardNumber = Math.floor(Math.random() * 13) + 1;
     var imageFileName = "cardImages/" + suitArray[suitNumber] + cardNumber + ".gif";
     
@@ -23,7 +23,7 @@ function checkForDuplicate (hand, imageFileName) {
 
 
 function newHand() {
-    var hand = ["", "", "", ""]; 
+    var hand = ["", "", "", "", ""]; 
     var cardCount = 0;
     
     while (cardCount < hand.length) {
