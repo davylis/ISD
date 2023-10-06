@@ -1,4 +1,4 @@
-function calculateProfit() {
+function calculateProfit()
     // Read value of rounds from the input field
     const rounds=document.getElementById("rounds").value;
     const bet=1.0;

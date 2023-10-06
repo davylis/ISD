@@ -1,17 +1,14 @@
-// Create an array with minigolf results of eight players 
 let minigolf = [23, 19, 37, 20, 21, 30, 26, 24];
 
-function showResults() {
-    // Sort the array
-   
-    // Assign the smallest result of to a variable
-   
-    // Assign the index of last array item to an variable
-    
-
-    // Assign the biggest result to a variable
-    
-
-    // Write the answer on the page, to the answer div, as content of the div
-    
+function funcArray(arr) {
+    for(let i=0; i<arr.length; i++){
+    console.log(arr[i]);
+    }
+}
+function showResults()  {
+    minigolf.sort();
+    let smallest=minigolf[0];
+    let biggest=minigolf[minigolf.length-1];
+    const result = "The smallest result is " + smallest + "(winner).<br>The biggest result is " + biggest + ".";
+    document.getElementById("answer").innerHTML= result;
 }
