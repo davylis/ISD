@@ -29,30 +29,3 @@ function calculateProfit() {
 
 }
 
-
-    
-        
-        
-     
-
-        
-
-       
-        
-        
-         
-       
-      
-            
-        
-       
-    
-            
-        
-
-    //Calculate the profit (euros) of the company by subtracting the win counter (euros) from the bets (euros)
-   
-
-    // Write the answer on the page, to the answer div, as content of the div
-   
-
