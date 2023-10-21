@@ -1,46 +1,38 @@
-// 09.array_warm_up_3.js JavasScript code
-// Study the code below and change it so that the program shows 
-// a hand of 5 cards where cards can be from all four suits.
-
-function randomizeCard() {
-    var suitArray = ["c", "d", "h", "s"];
-    var suitNumber = Math.floor(Math.random() * 2);
-    var cardNumber = Math.floor(Math.random() * 13) + 1;
-    var imageFileName = "cardImages/" + suitArray[suitNumber] + cardNumber + ".gif";
-    
-    return imageFileName;
-}
-
-function checkForDuplicate (hand, imageFileName) {
-    for (var i = 0; i < hand.length; i++ ){
-        if (hand[i] === imageFileName) {
-            return true;
+function duplicateChecker(arr, dub){
+    for(let i=0; i<arr.length; i++){
+        if(arr[i]==dub){
+            return false;
         }
     }
-    
-    return false;
+    return true;
 }
 
+let bloodTypes = ["A+", "O-", "AB+", "O+", "AB+", "AB+", "O-", "AB+", "O-", "AB+"];
 
-function newHand() {
-    var hand = ["", "", "", ""]; 
-    var cardCount = 0;
-    
-    while (cardCount < hand.length) {
-        var imageFileName = randomizeCard();
-        var isDuplicate = checkForDuplicate(hand, imageFileName);
-        
-        if (isDuplicate == false) {        
-            hand[cardCount] = imageFileName;
-            cardCount++;
+let elements = [];
+for(let i=0; i<bloodTypes.length; i++){
+    if(duplicateChecker(elements, bloodTypes[i])==true){
+        elements.push(bloodTypes[i]);  
+    }
+}
+
+let elements_size = [];
+for(let i=0; i<elements.length; i++){
+    let element_size=0;
+    for(let n=0; n<bloodTypes.length; n++){
+        if (elements[i]==bloodTypes[n]){
+            element_size++;
         }
     }
-
-    for (var i = 0; i < hand.length; i++) {
-        document.write('<img src="' + hand[i] + '" alt="card image" /> ');     
-    }
+    elements_size.push(element_size);
 }
+let result_sum="";
+for (let i=0; i<elements.length; i++){
+    let result = 100 * (elements_size[i]/bloodTypes.length);
+    result_sum+=result.toFixed(1) + "%: " + elements[i] + "<br>";
+}
+document.getElementById("answer").innerHTML=result_sum
 
-newHand();
-
-// End
+console.log(elements)
+console.log(elements_size)
+console.log(result_sum)
