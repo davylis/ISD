@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Club members</title>
+</head>
+<body>
+    <h1>Club members</h1>
+
+    <form>
+        <label>Name: </label>
+        <input type="text" id="name" />
+        <label>Age: </label>
+        <input type="text" id="age" />
+        <input type="button" value = "Save" onclick="saveInformation()" />
+        <br>
+        <p id="pOutput">0 members</p>
+        <input type="button" value = "Show Minors" onclick="showMinors()" />
+        <input type="button" value = "Show Adults" onclick="showAdults()" />
+        <input type="button" value = "Show oldest member(s)" onclick="showOldest()" />
+        <input type="button" value = "Show youngest member(s)" onclick="showYoungest()" />
+    </form>
+    <div id="names"></div>
+    <script src="09.array_warm_up_1.js"></script>
+</body>
+</html>
