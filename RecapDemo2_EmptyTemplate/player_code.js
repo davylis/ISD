@@ -15,7 +15,7 @@ function addPlayer(){
 function listPlayers(){
     let output = "";
     for (let i = 0; i<names.length; i++){
-        output+=names[i] + "-" + scores[i] +"<br>";
+        output+=names[i] + " - " + scores[i] +"<br>";
     }
     document.getElementById("pOutput").innerHTML = output;
 }
@@ -25,7 +25,7 @@ function searchPlayers(){
     let output = "";
     for(let i = 0; i<names.length; i++){
         if (name === names[i]){
-            output+=names[i] + "-" + scores[i] + "<br>";
+            output+=names[i] + " - " + scores[i] + "<br>";
         }
     }
     document.getElementById("pOutput2").innerHTML = output;
@@ -33,5 +33,16 @@ function searchPlayers(){
 
 function findWinner(){
     let maxScore=0;
-    
+    let output = "";
+    for(let i=0; i<scores.length; i++){
+        if(scores[i]>maxScore){
+            maxScore = scores[i];
+        }
+    }
+    for(let i=0; i<scores.length; i++){
+        if(scores[i]===maxScore){
+            output+=names[i] + " - " + scores[i] + "<br>";
+        }
+    }
+    document.getElementById("pOutput3").innerHTML = output;
 }
