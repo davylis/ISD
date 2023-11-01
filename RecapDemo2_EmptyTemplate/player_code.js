@@ -10,6 +10,8 @@ function addPlayer(){
     let score = document.getElementById("txtScore").value;
     names.push(name);
     scores.push(score);
+    document.getElementById("txtName").value="";
+    document.getElementById("txtScore").value="";
 }
 
 function listPlayers(){
