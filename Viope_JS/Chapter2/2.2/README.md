@@ -1,6 +1,8 @@
-# Hello Finland
-Write a JavaScript program that prints "Hello Finland!" to the Console window.
-The web page contains the heading "My first JavaScript exercise", nothing else.
+# One Button
+Write a JavaScript program that prints "Button pressed." to the Console window, whenever a uses presses a button on a html page.
+The web page contains the actual button and a heading "One Button Exercise".
+
+Example output:
 ```
-Hello Finland!
+Button pressed.
 ```
