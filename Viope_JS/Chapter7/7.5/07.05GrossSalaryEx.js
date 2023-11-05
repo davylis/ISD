@@ -1,15 +1,16 @@
 function calculateSalary(hours, hourlySalary) {
-		// calculate salary
+	let calculation = hourlySalary * hours;
 
-		// return the gross salary with the return statement
+	return calculation;
 		
 }
 
 function showGrossSalary() {
-		// assign the input field value to the variable hours
-		// assign the second input field value to the variable hourlySalary
-		// call the calculateSalary function
-		// write the answer on the html page
+
+	let hours = Number(document.getElementById("hours").value)										// assign the input field value to the variable hours
+	let hourlySalary = Number(document.getElementById("hourlySalary").value)						// assign the second input field value to the variable hourlySalary
+	let result = "Gross salary is " + calculateSalary(hours, hourlySalary).toFixed(2) + " euros."	// call the calculateSalary function
+	document.getElementById("answer").innerHTML = result;											// write the answer on the html page
 
 }
 
