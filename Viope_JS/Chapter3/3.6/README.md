@@ -10,3 +10,4 @@ A car driver (a motorist) was driving too fast. He drove 20 km/h over the speedl
 One sample output for shown input:
 
 ![unit_fine](./05.06.png)
+
