@@ -1,7 +1,7 @@
 # Software Development Course 
 
 My first course of JavaScript
-
+```
 Content of course:
 -Basics of JS
 -JS Variables
@@ -13,3 +13,4 @@ Content of course:
 -Application Lifestyle
 -Development Methods
 -Roundup
+```
