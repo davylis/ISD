@@ -15,6 +15,7 @@ The first package is an all-inclusive package where unlimited data, calls and te
 |Special package      |
 
 | Attempt | #1    | #2    |
+| :---   | :---  | :---  |
 | Seconds | 301   | 283   |
 
 1. Calculate how much the Special package would cost for given amount of calling time and number of text messages.
