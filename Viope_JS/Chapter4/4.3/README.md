@@ -18,5 +18,11 @@ The first package is an all-inclusive package where unlimited data, calls and te
 | :---   | :---  | :---  |
 | Seconds | :--- | 283   |
 
+Amount | Items
+------:|:-----
+    20 | Wooden Boards
+     5 | Old Parts
+
+
 1. Calculate how much the Special package would cost for given amount of calling time and number of text messages.
 2. Compare the total prices with the if statement to find out which package would be the cheapest.
