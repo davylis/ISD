@@ -11,7 +11,7 @@ Sample output for shown input:
 The first package is an all-inclusive package where unlimited data, calls and text messages are covered by the monthly fee 29.90 euros. The second special package has unlimited data included in the monthly 19.90 euro fee but the calls are 0.069 euros per minute and text messages 0.069 euros a piece.
 
 |                     | Monthly Fee | Calls (min) | Text messages(pcs) |
-| ------------------- | ----------- | ----------- | ------------------ |
+| :-----------------: | :---------: | :---------: | :----------------: |
 |All-inclusive package| 29.30       | unlimited   | 0.069              |
 |Special package      | 19.90       | 0.069       | 0.069              |
 
