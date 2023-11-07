@@ -15,11 +15,5 @@ The first package is an all-inclusive package where unlimited data, calls and te
 |All-inclusive package| 29.30       | unlimited   | 0.069              |
 |Special package      | 19.90       | 0.069       | 0.069              |
 
-| Attempt | #1   | #2    |
-| :---   | :---  | :---  |
-| Seconds | :--- | 283   |
-
-
-
 1. Calculate how much the Special package would cost for given amount of calling time and number of text messages.
 2. Compare the total prices with the if statement to find out which package would be the cheapest.
