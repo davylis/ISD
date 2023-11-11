@@ -1,0 +1,177 @@
+{
+    "total": 2,
+    "type": "organisation",
+    "items": [
+      {
+        "parent": 84846,
+        "web_library": null,
+        "address": {
+          "area": {
+            "se": null,
+            "sv": null,
+            "fi": null,
+            "ru": null,
+            "en": null
+          },
+          "zipcode": "00520",
+          "box_number": null,
+          "city": {
+            "se": "Helsinki",
+            "sv": "Helsingfors",
+            "fi": "Helsinki",
+            "ru": "Helsinki",
+            "en": "Helsinki"
+          },
+          "street": {
+            "se": "Kellosilta 9",
+            "sv": "Klockbron 9",
+            "fi": "Kellosilta 9",
+            "ru": "Kellosilta 9",
+            "en": "Kellosilta 9"
+          },
+          "coordinates": {
+            "lon": "24.93585525",
+            "lat": "60.20084009"
+          },
+          "info": {
+            "se": null,
+            "sv": null,
+            "fi": null,
+            "ru": null,
+            "en": null
+          }
+        },
+        "city": 15885,
+        "consortium": 2093,
+        "type": "library",
+        "branch_type": "main_library",
+        "name": {
+          "se": "Pasilan kirjasto",
+          "sv": "Böle bibliotek",
+          "fi": "Pasilan kirjasto",
+          "ru": "Библиотека Пасила",
+          "en": "Pasila Library"
+        },
+        "short_name": {
+          "se": "Pasila",
+          "sv": "Böle",
+          "fi": "Pasila",
+          "ru": "Пасила",
+          "en": "Pasila"
+        },
+        "id": 84924,
+        "email": {
+          "se": "tietopalvelu.pasila@hel.fi",
+          "sv": "tietopalvelu.pasila@hel.fi",
+          "fi": "tietopalvelu.pasila@hel.fi",
+          "ru": "tietopalvelu.pasila@hel.fi",
+          "en": "tietopalvelu.pasila@hel.fi"
+        },
+        "slug": {
+          "se": "pasila",
+          "sv": "bole-bibliotek",
+          "fi": "pasila",
+          "ru": "biblioteka-pasila",
+          "en": "pasila-library"
+        },
+        "homepage": {
+          "se": "http://www.helmet.fi/pasilankirjasto",
+          "sv": "http://www.helmet.fi/bolebibliotek",
+          "fi": "http://www.helmet.fi/pasilankirjasto",
+          "ru": "http://www.helmet.fi/pasilankirjasto",
+          "en": "http://www.helmet.fi/pasilalibrary"
+        },
+        "status": 0,
+        "region": 1003,
+        "provincial_library": 396,
+        "schedules": [
+          {
+            "date": "2023-11-11",
+            "times": [
+              {
+                "opens": "10:00",
+                "closes": "16:00"
+              }
+            ],
+            "period": 360596,
+            "opens": "10:00",
+            "closed": false,
+            "day": 6,
+            "closes": "16:00",
+            "sections": {
+              "selfservice": {
+                "times": [],
+                "period": 10360596,
+                "opens": null,
+                "closed": true,
+                "closes": null,
+                "info": {
+                  "se": null,
+                  "fi": null,
+                  "sv": null,
+                  "ru": null,
+                  "en": null
+                }
+              }
+            },
+            "info": {
+              "se": null,
+              "fi": null,
+              "ru": null,
+              "sv": null,
+              "en": null
+            }
+          }
+        ]
+      },
+      {
+        "parent": 84924,
+        "web_library": null,
+        "address": null,
+        "city": 16170,
+        "consortium": null,
+        "type": "department",
+        "branch_type": null,
+        "name": {
+          "se": "Pasilan kirjaston lastenosasto",
+          "sv": "Pasilan kirjaston lastenosasto",
+          "fi": "Pasilan kirjaston lastenosasto",
+          "ru": "Pasilan kirjaston lastenosasto",
+          "en": "Pasilan kirjaston lastenosasto"
+        },
+        "short_name": {
+          "se": null,
+          "sv": null,
+          "fi": null,
+          "ru": null,
+          "en": null
+        },
+        "id": 84761,
+        "email": {
+          "se": null,
+          "sv": null,
+          "fi": null,
+          "ru": null,
+          "en": null
+        },
+        "slug": {
+          "se": "pasila-lapset",
+          "sv": "pasila-lapset",
+          "fi": "pasila-lapset",
+          "ru": "pasila-lapset",
+          "en": "pasila-lapset"
+        },
+        "homepage": {
+          "se": "http://www.lib.hel.fi/fi-FI/pasila/lastenostasto/",
+          "sv": "http://www.lib.hel.fi/fi-FI/pasila/lastenostasto/",
+          "fi": "http://www.lib.hel.fi/fi-FI/pasila/lastenostasto/",
+          "ru": "http://www.lib.hel.fi/fi-FI/pasila/lastenostasto/",
+          "en": "http://www.lib.hel.fi/fi-FI/pasila/lastenostasto/"
+        },
+        "status": 0,
+        "region": 1003,
+        "provincial_library": 390,
+        "schedules": []
+      }
+    ]
+  }
