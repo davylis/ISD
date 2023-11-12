@@ -10,7 +10,7 @@ function buttonClick(length){
 	} else if (length <= 45){
 		visit = 16.50;
 	} else if (length > 45){
-		visit = 16.50;
+		visit = 21;
 	}
 	return visit;
 }
