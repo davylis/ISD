@@ -13,3 +13,7 @@ The maximum Kela reimbursement (Kela-korvaus) is decided based on the following 
 Make a function (1.), which gets the length of the visit as a parameter and returns the maximum Kela reimbursement. Convert the length to a number value with the parseInt() function before calculation.
 
 Make a function (3.) that is called when the button is clicked. It naturally uses the function (1.). Use descriptive and long enough function and variable names.
+
+Sample output for shown input:
+
+![Doctor_visit](./07.06a.png)
