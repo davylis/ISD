@@ -19,7 +19,7 @@ function calculate() {
 		// Read values from the input fields
 		let length = document.getElementById("length").value;
 		let doctors_fee = document.getElementById("doctorsFee").value;
-		parseInt(length);
+		length = parseInt(length);
 		
 		// Call the function (1.) which calculates and returns Kela reimbursement 
 		let visit = buttonClick(length);
