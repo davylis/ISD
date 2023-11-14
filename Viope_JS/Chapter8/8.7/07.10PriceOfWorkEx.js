@@ -51,7 +51,9 @@ function calculate() {
 	const work_in_hours = work_in_minutes / 60;
 	let result = "Length of the work was " + work_in_minutes + " minutes.<br>"
 	let final_price;
-    // If it is not Sunday  (Call isSunday() function)
+    // If it is Sunday  (Call isSunday() function)
+	//In If-else statement you get true, it will automatically step into if. If it is false, it goes to else.
+	//0 is false, everything else is true
 	if(isSunday(dateRaw)) {
         //Calculate and show price of the repair work during the workdays
 		result += "The hourly price is during the Sundays 72.00 euros.<br>"
