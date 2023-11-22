@@ -1,16 +1,15 @@
-// 10.object_more_tasks_3.js JavasScript code
-// Complete this program so that it allows the user to add new courses and list courses.
 
-// INSERT YOUR CODE HERE
-// (1) Define an object constructor function here
+// Define a Course class to store course code and course name
+class Course {
+    constructor(code, name){
+        this.code = code;
+        this.name = name;
+    }
+};
 
+let courseArray = [];
 
-
-
-
-
-
-
+// Get value from input field from a HTML
 function addCourse() {
     var courseCode = document.getElementById("txtCourseCode").value;
     var courseName = document.getElementById("txtCourseName").value;
@@ -19,32 +18,25 @@ function addCourse() {
         return;
     }
     
-    // INSERT YOUR CODE HERE
-    // (2) Create a new Course object here and insert it into the course array
+    // Create a new Course object here and insert it into the course array
     
+    courseArray.push(new Course(courseCode, courseName))
     
-    
-    
+   // This is clearing HTML input fields 
     document.getElementById("txtCourseCode").value = "";
     document.getElementById("txtCourseName").value = "";
     document.getElementById("txtCourseCode").focus();
     document.getElementById("pOutput").innerHTML = "";
 }
-
+ //Printing list of courses 
 function listCourses() {
     var outputText = "";
-    
-    // INSERT YOUR CODE HERE
-    // (3) Build the output text here. You need to write a loop.
-
-    
-    
-    
-    
-    
+    for(i=0; i<courseArray.length; i++){
+        outputText+=courseArray[i].name + " (" + courseArray[i].code + ")<br>";
+    }
     document.getElementById("pOutput").innerHTML = outputText;
 }
-
+// Sorting list of courses
 function sortCourseArray() {
     function compareTwoCourses(a, b) {
         if (a.name.toUpperCase() > b.name.toUpperCase()) {
@@ -55,9 +47,5 @@ function sortCourseArray() {
     }
     
     courseArray.sort(compareTwoCourses);
+    listCourses();
 }
-
-// This array is created when the page is loaded
-var courseArray = [];
-
-// End

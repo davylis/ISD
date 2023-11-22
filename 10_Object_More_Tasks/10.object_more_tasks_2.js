@@ -4,14 +4,16 @@
 // * Add a function named toString to the object constructor.
 // * Do not do any other modifications to the code.
 
-function Department(deptno, deptname) {
-    this.number = deptno;
-    this.name = deptname;
-    
-   this.toString = function() {
-    return this.number + " - " + this.name;
-   }
-    
+class Department {
+    constructor(deptno, deptname) {
+        this.number = deptno;
+        this.name = deptname;
+
+        this.toString = function () {
+            return this.number + " - " + this.name;
+        };
+
+    }
 }
 
 var outputText = "";
