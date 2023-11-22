@@ -20,11 +20,12 @@ let json = [
     }
   ]
 
-let products;
-// todo: Parse the JSON text into Javascript objects (1 array, 3 'product' objects)
-let product1 = json[0];
-let product2 = json[1];
-let product3 = json[2];
+// ================== NOT USED ===================
+// let products;
+// // todo: Parse the JSON text into Javascript objects (1 array, 3 'product' objects)
+// let product1 = json[0];
+// let product2 = json[1];
+// let product3 = json[2];
 
 function listProducts() {
     // Handle the product objects from the array. Use i to index the array.
