@@ -22,7 +22,7 @@ function addFish() {
 function listAllCatch() {
   var outputText = "";
   for(let i = 0; i < speciesArray.length; i++){
-    outputText += "<p>" + speciesArray[i] + " " + lengths[i] + " " + weights[i] + "</p>"
+    outputText += "<p>" + speciesArray[i] + ": " + lengths[i] + "cm, " + weights[i] + "kg</p>"
   }
   document.getElementById("pOutput2").innerHTML = outputText;
 }
@@ -34,7 +34,7 @@ function showAverageWeight() {
   for(let i = 0; i < weights.length; i++){
     total += weights[i]
   }
-  outputText = (total / weights.length).toFixed(2);
+  outputText = "Average: " + (total / weights.length) + "kg.";
 
   document.getElementById("pOutput3").innerHTML = outputText;
 }
@@ -43,17 +43,20 @@ function showAverageWeight() {
 function findFish() {
   let searchFish = document.getElementById("txtSpeciesSearched").value;
   var outputText = "";
-  let arr = [];
+  let found = false;
 
-  for(let i = 0; i < speciesArray.length; i++){
-    if(searchFish === speciesArray[i]){
-      arr.push(i)
-      console.log(i)
-    }
+  for(var i=0; i < speciesArray.length; i++) {
+    if(searchFish===speciesArray[i]){
+      found = true;
+      outputText = outputText + speciesArray[i] + ": " +lengths[i]
+                    +"cm, "+ weights[i] + "kg.<br />";
+    } 
   }
-  for(let i = 0; i < arr.length; i++){
-    outputText += "<p>" + speciesArray[arr[i]] + " " + lengths[arr[i]] + " " + weights[arr[i]] + "</p>";
+
+  if(found === false) {
+    outputText = searchFish + " not found!";
   }
+
   // Updating the View
   document.getElementById("pOutput4").innerHTML = outputText;
 }
@@ -61,36 +64,57 @@ function findFish() {
 // ----------------------------------------------------------------------------
 function maxWeightFreshmanWay() {
   
-  var outputText = convertKgToLbs(maxWeightUsingIndex());
+  var outputText = "";
+
+  if(speciesArray.length > 0) {
+    var maxWeight = -2;
+    var maxSpecies = "N/A";
+
+    for(var i=0; i < speciesArray.length; i++) {
+      if( maxWeight < weights[i]  ) {
+        maxWeight = weights[i];
+        maxSpecies = speciesArray[i];
+      }
+    }
+
+    outputText = "Max: " +maxWeight + " (" +maxSpecies +")";
+  } else {
+    outputText = "Error: No fish, no maximum.";
+  }
+
   // Updating the View
- document.getElementById("pOutput5").innerHTML = outputText;
+  document.getElementById("pOutput5").innerHTML = outputText;
 }
- 
+
 
 
 // ----------------------------------------------------------------------------
 function maxWeightUsingIndex() {
   var outputText = "";
-  let max = weights[0];
-  let arr2 = [0];
 
-  for(let i = 0; i < weights.length; i++){
-    if(weights[i] > max){
-      max = weights[i]
-      arr2 = [i];
-    }else if(weights[i] === max){
-      arr2.push(i);
+  if(speciesArray.length > 0) {
+    var maxIndex = 0;
+
+    for(var i=0; i < speciesArray.length; i++) {
+      if( weights[maxIndex] < weights[i]  ) {
+        maxIndex = i; 
+      }
     }
-  }
-  var outputText = "";
 
-  for(let i = 0; i < arr2.length; i++){
-    outputText += weights[arr2[i]] + " kg <br>";
-}
+    var kilograms = weights[maxIndex];
+    var species = speciesArray[maxIndex];
+
+    // Updating the View
+    outputText = "Max: " + kilograms + "kg (" +species +")"
+        + " which in lbs is " + convertKgToLbs(kilograms);
+  } else {
+    outputText = "Error: No fish, no maximum.";
+  }
+
   // Updating the View
   document.getElementById("pOutput5").innerHTML = outputText;
 }
-
+ 
 // ------------ library function for converting kg to lbs ---------------------
 function convertKgToLbs(kilograms) {
   let pounds = kilograms * 2.2;
