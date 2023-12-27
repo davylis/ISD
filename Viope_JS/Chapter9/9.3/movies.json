@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Mission: Impossible - Dead Reckoning Part One",
+        "year": 2023,
+        "description": "Ethan Hunt and his IMF team must track down a dangerous weapon before it falls into the wrong hands."
+    },
+    {
+        "name": "La La Land",
+        "year": 2016,
+        "description": "While navigating their careers in Los Angeles, a pianist and an actress fall in love while attempting to reconcile their aspirations for the future."
+    },
+    {
+        "name": "Death on the Nile",
+        "year": 2022,
+        "description": "While on vacation on the Nile, Hercule Poirot must investigate the murder of a young heiress."
+    },
+    {
+        "name": "Gone with the Wind",
+        "year": 1939,
+        "description": "A sheltered and manipulative Southern belle and a roguish profiteer face off in a turbulent romance as the society around them crumbles with the end of slavery and is rebuilt during the Civil War and Reconstruction periods."
+    }
+]
